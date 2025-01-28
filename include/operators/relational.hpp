@@ -69,7 +69,7 @@ bool BigInt::operator>(const BigInt& num) const {
 */
 
 bool BigInt::operator<=(const BigInt& num) const {
-    return !(*this > num);
+    return !(num < *this);
 }
 
 
